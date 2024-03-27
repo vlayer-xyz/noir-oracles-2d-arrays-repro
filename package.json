@@ -1,4 +1,13 @@
 {
   "name": "2d-repro",
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "type": "module",
+  "scripts": {
+    "prove": "nargo prove --oracle-resolver http://localhost:5555",
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2",
+    "tsx": "^4.7.1"
+  }
 }
